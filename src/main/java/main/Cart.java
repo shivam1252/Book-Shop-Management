@@ -14,8 +14,11 @@ public class Cart extends Bill{
       //write your code here
       //------------
       //------------
+    	
+    	
     	inCart.add(a);
     	quant.add(q);
+    	noOfItems++;
    
 
     }
@@ -28,11 +31,19 @@ public class Cart extends Bill{
         totalAmt = calcBill();
         System.out.println("total Amount: "+ Integer.toString(totalAmt));
     }
+    
+//Tests each of the books present in your cart and the quantity of each books and then calculates the final bill of your cart.
     public int calcBill() {
     	int total=0;
 //    	write your code here!!!
 //    	----------------------
-    	return total;
+    	
+    	for(int i=0;i < noOfItems; i++){
+    		
+    		total += inCart.get(i).mrp * quant.get(i);
+    		
+    	}
+    	 return total;
     	
     }
 }

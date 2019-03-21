@@ -25,7 +25,7 @@ public class BookShop{
         itemAvailable[13].addItem("nuttella", 240);
         itemAvailable[14].addItem("Dove", 143);
         itemAvailable[15].addItem("Not Fade Away", 82);
-        itemAvailable[16].addItem("Money Ball", 84);
+        itemAvailable[16].addItem("Money Ball", 84);  
 
         
         System.out.println("S.no" +"    "+"itemName"+"     "+ "MRP");

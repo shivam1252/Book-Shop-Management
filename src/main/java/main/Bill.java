@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class Bill extends CustomerName{
 	 //bill no & date
     //methods like totalAmt ,printBill,discount
+	Scanner rnd = new Scanner(System.in);
     public static String getRandomNumberString() {
         // It wishopTestll generate 6 digit random Number.
         // from 0 to 999999
@@ -18,7 +19,7 @@ public class Bill extends CustomerName{
     String billNo;
     String date;
     public void getBill(String name){
-        billNo = getRandomNumberString();
+        billNo = Bill.getRandomNumberString();
         Date d = new Date();
         date = d.toString();
         System.out.println('\n');
